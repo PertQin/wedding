@@ -1,0 +1,296 @@
+/* 案例页 */
+html,
+body {
+  overflow-x: hidden;
+}
+#main {
+  width: 100%;
+}
+#main .bgBox {
+  padding: 0;
+  max-width: none;
+  margin: 0;
+  width: 100%;
+  height: 521px;
+  position: relative;
+}
+#main .bgBox .row {
+  margin: 0;
+}
+#main .bgBox .bg {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+#main .bgBox .bg img {
+  width: 100%;
+  height: auto;
+}
+#main .bgBox .bg-nav {
+  width: 332px;
+  height: 200px;
+  background: rgba(252, 49, 88, 0.4);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+#main .bgBox .bg-nav .title {
+  margin-top: 50px;
+  line-height: 48px;
+  font-size: 36px;
+  letter-spacing: 3px;
+}
+#main .bgBox .bg-nav .path {
+  line-height: 84px;
+  font-size: 0;
+}
+#main .bgBox .bg-nav .path div {
+  margin-left: 15px;
+}
+#main .bgBox .bg-nav .path span {
+  display: inline-block;
+  font-size: 18px;
+  margin-right: 15px;
+}
+#main .alzs {
+  margin-top: 5%;
+  color: #382d44;
+  font-size: 28px;
+  letter-spacing: 6px;
+}
+#main .alzsContent {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding-bottom: 40px;
+}
+#main .alzsContent .cases_item {
+  padding: 0 6px;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
+#main .alzsContent .cases_item img {
+  width: 100%;
+  height: 100%;
+}
+#main .alzsContent .cases_item:hover {
+  z-index: 2;
+  transform: scale(1.1);
+}
+#main .custom_rating {
+  height: 563px;
+  background: url('../images/homepage_bg.jpg') no-repeat;
+  background-size: cover;
+  background-position-x: 50%;
+  background-position-y: 0%;
+}
+#main .custom_rating .good_rating {
+  margin-top: 2%;
+  letter-spacing: 6px;
+}
+#main .custom_rating .good_rating p {
+  color: #382d44;
+  font-size: 28px;
+  font-weight: normal;
+  margin: 0;
+}
+#main .custom_rating .pic {
+  margin-top: 1%;
+}
+#main .custom_rating .thanks {
+  margin-top: 2%;
+}
+#main .custom_rating .thanks p {
+  color: #646464;
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+#main .custom_rating .rating_container {
+  max-width: 1200px;
+  height: 310px;
+  padding: 0 98px;
+  margin: 0 auto;
+  position: relative;
+}
+#main .custom_rating .rating_container .rating_swipe {
+  width: 1000px;
+  height: 292px;
+}
+#main .custom_rating .rating_container .rating_swipe ul {
+  width: 300%;
+  height: auto;
+  list-style: none;
+  padding: 0;
+}
+#main .custom_rating .rating_container .rating_swipe ul li {
+  width: calc(33.33333333%);
+  padding-top: 29px;
+}
+#main .custom_rating .rating_container .rating_swipe ul li .valuer {
+  width: 100%;
+  height: 165px;
+}
+#main .custom_rating .rating_container .rating_swipe ul li .valuer .avator {
+  width: 118px;
+  height: 96px;
+  position: relative;
+  left: 50%;
+  margin-left: -48px;
+}
+#main .custom_rating .rating_container .rating_swipe ul li .valuer .avator img {
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+#main .custom_rating .rating_container .rating_swipe ul li .valuer .name {
+  display: block;
+  height: 60px;
+  font-size: 16px;
+  line-height: 60px;
+  color: #ee058c;
+}
+#main .custom_rating .rating_container .rating_swipe ul li .comment p {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: SimHei;
+  font-weight: normal;
+  color: #646464;
+  line-height: 35px;
+}
+#main .custom_rating .rating_container .arrow {
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  top: 50%;
+  margin-top: -35px;
+  left: 0;
+}
+#main .custom_rating .rating_container .arrow span {
+  width: 38px;
+  height: 70px;
+  background: url('../images/arrow_left.png') no-repeat;
+  cursor: pointer;
+}
+#main .custom_rating .rating_container .arrow .left {
+  float: left;
+}
+#main .custom_rating .rating_container .arrow .right {
+  float: right;
+  background: url('../images/arrow_right.png') no-repeat;
+}
+.thumbnail {
+  display: block;
+  padding: 0;
+  margin-bottom: 10px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: 0;
+  border-radius: 0;
+}
+.thumbnail > img,
+.thumbnail a > img {
+  margin-right: auto;
+  margin-left: auto;
+}
+a.thumbnail:hover,
+a.thumbnail:focus,
+a.thumbnail.active {
+  border-color: #337ab7;
+}
+.thumbnail .caption {
+  padding: 0;
+  color: #333;
+}
+@media screen and (max-width: 1200px) and (min-width: 641px) {
+  #main {
+    width: 100%;
+  }
+  #main .bgBox {
+    width: 1200px;
+    position: relative;
+    height: 440px;
+    top: 0;
+    left: 50%;
+    margin-left: -600px;
+    margin-bottom: 20px;
+  }
+  #main .bgBox .bg-nav {
+    width: 30%;
+    height: 161px;
+  }
+  #main .bgBox .bg-nav .path {
+    line-height: 50px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #main .alzsContent {
+    width: 94%;
+  }
+  #main .alzsContent .cases_item {
+    float: left;
+  }
+  #main .custom_rating .rating_container {
+    height: auto;
+    width: 90%;
+  }
+  #main .custom_rating .rating_container .rating_swipe {
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 840px) and (min-width: 750px) {
+  #main .row,
+  #main .custom_rating .good_rating p {
+    font-size: 16px;
+    letter-spacing: normal;
+  }
+}
+@media screen and (max-width: 780px) {
+  #main .row,
+  #main .custom_rating .good_rating p {
+    font-size: 20px;
+    letter-spacing: normal;
+  }
+  #main .custom_rating .rating_container {
+    padding: 0;
+  }
+  #main .custom_rating .rating_container .rating_swipe ul li .comment p {
+    font-size: 12px;
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 640px) {
+  #main .bgBox {
+    width: 100%;
+    height: 282px;
+    left: 0;
+    top: 0;
+    margin-bottom: 20px;
+  }
+  #main .bgBox .bg {
+    height: 282px;
+  }
+  #main .bgBox .bg img {
+    width: auto;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  #main .bgBox .bg-nav {
+    width: 60%;
+    height: 124px;
+  }
+  #main .bgBox .bg-nav .title {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  #main .bgBox .bg-nav .path {
+    line-height: 30px;
+  }
+}

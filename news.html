@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>新闻页</title>
+    <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/news.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css">
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <!-- 导航条 -->
+    <nav class="navbar navbar-inverse navbar-static-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target="#togglemenu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+		             </button>
+
+                <!-- LOGO -->
+                <a class="navbar-brand" href="#">
+                    <img src="./images/logo.png" alt="">
+                </a>
+            </div>
+
+
+            <div class="collapse navbar-collapse" id="togglemenu">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">首页</a></li>
+                    <li class="active"><a href="#">新闻资讯</a></li>
+                    <li><a href="#">项目案例</a></li>
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">我们的服务</a></li>
+                    <li><a href="#">联系我们</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- 页面主要内容  -->
+    <div id="main">
+        <div class="container-fluid bgBox">
+            <div class="row">
+                <div class="bg">
+                    <img src="./images/news_banner.jpg" alt="">
+                </div>
+                <div class="bg-nav">
+                    <div class="title">新闻资讯</div>
+                    <div class="path">
+                        <div>
+                            <span>首页</span>
+                            <span>></span>
+                            <span>新闻资讯</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 热点动态-标题 -->
+        <div class="container rddt">
+            <div class="row hot_new">
+                <p class="text-center">热点动态</p>
+            </div>
+            <div class="row">
+                <div class="text-center">
+                    <img src="./images/title_line.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- 热点动态-内容 -->
+        <div class="container rddtContent">
+            <div class="row contentBox">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 left">
+                    <div class="big-pic">
+                        <img src="./images/news_9.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 right">
+                    <h1>
+                        <a href="">
+                          婚礼风向标【沈佳宜柯景腾婚礼】
+                        </a>
+                    </h1>
+                    <div class="news-info">
+                        <a href="#">
+                            <p>摩拜单车管理层介绍，过去一年间，以摩拜单车为代表的智能共享单车快速成长，使城市自行车出行占比从5.5翻至11.6%,成为继公交地铁、出租车之后的 第三大城市出行方式。</p>
+                        </a>
+                    </div>
+                    <div class="news-imgs">
+                        <a href="#" class="fl">
+                            <img src="./images/news_12.jpg" alt="">
+                        </a>
+                        <a href="#" class="fr">
+                            <img src="./images/news_11.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 新闻资讯 -->
+        <div class="container xwzx">
+            <p class="text-center">新闻资讯</p>
+            <div class="text-center">
+                <img src="./images/title_line.png" alt="">
+            </div>
+            <div class="tab">
+                <ul>
+                    <li>
+                        <a>
+                            <span>行业动态</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <span>热点新闻</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="news_item col-lg-4 col-sm-6 col-md-4 ">
+                    <div class="thumbnail">
+                        <img src="./images/news_1.jpg" alt="...">
+                        <div class="caption">
+                            <p>2017「姐妹助力团」打造计划</p>
+                            <p>4月25日，宝发物业管理集团与摩拜单车在深圳老街举行摩拜单车推荐停车点揭牌仪式。宝发物业作为中国物业行业领先的社区服务与资产管理整合运营商。</p>
+                            <p>
+                                <a href="#">
+                                    <span class="label label-default">公司资讯</span>
+                                    <span class="date">2017-05-06</span>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="news_item col-lg-4 col-sm-6 col-md-4 ">
+                    <div class="thumbnail">
+                        <img src="./images/news_9.jpg" alt="...">
+                        <div class="caption">
+                            <p>婚礼风向标【沈佳宜柯景腾婚礼】</p>
+                            <p>据悉，宝发物业与摩拜单车的合作，双方优势互补。未来宝发物业将携手摩拜单车，将合作范围扩展至宝发物业在各大城市的社区，摩拜单车将定点投放单...</p>
+                            <p>
+                                <a href="#">
+                                    <span class="label label-default">热点新闻</span>
+                                    <span class="date">2017-05-06</span>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="news_item col-lg-4 col-sm-6 col-md-4 ">
+                    <div class="thumbnail">
+                        <img src="./images/news_7.jpg" alt="...">
+                        <div class="caption">
+                            <p>2016CP社年终复古大Party</p>
+                            <p>据悉，宝发物业与摩拜单车的合作，双方优势互补。未来宝发物业将携手摩拜单车，将合作范围扩展至宝发物业在各大城市的社区，摩拜单车将定点投放单...</p>
+                            <p>
+                                <a href="#">
+                                    <span class="label label-default">行业动态</span>
+                                    <span class="date">2017-05-06</span>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                 <div class="news_item col-lg-4 col-sm-6 col-md-4 ">
+                    <div class="thumbnail">
+                        <img src="./images/news_4.jpg" alt="...">
+                        <div class="caption">
+                            <p>吴晓锐handelababy1018世纪婚礼</p>
+                            <p>宝发物业1993年成立于深圳，经过20余年的快速发展，服务已遍及全国60余个大中城市，服务面积近1.7亿平米，服务客户累积达180余万人，服...</p>
+                            <p>
+                                <a href="#">
+                                    <span class="label label-default">公司资讯</span>
+                                    <span class="date">2017-05-06</span>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="news_item col-lg-4 col-sm-6 col-md-4 ">
+                    <div class="thumbnail">
+                        <img src="./images/news_5.jpg" alt="...">
+                        <div class="caption">
+                            <p>“佳人组团”疯狂来袭</p>
+                            <p>近年来，深圳政府为吸引和扶持留学人员来深创业，人才政策层出不穷，越来越多的留学生将深圳作为回国发展的首选。2016年，深圳迎来最大规模海归潮...</p>
+                            <p>
+                                <a href="#">
+                                    <span class="label label-default">热点新闻</span>
+                                    <span class="date">2017-05-06</span>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="news_item col-lg-4 col-sm-6 col-md-4 ">
+                    <div class="thumbnail">
+                        <img src="./images/news_6.jpg" alt="...">
+                        <div class="caption">
+                            <p>全新二期婚礼故事限量升级</p>
+                            <p>城市、公园、商场及景区外语指示牌闹笑话的现象，不只是北京石景山八大处公园独有，各地很普遍，拼凑与中文直译，这些标牌被网友戏称为“中式英文...</p>
+                            <p>
+                                <a href="#">
+                                    <span class="label label-default">行业动态</span>
+                                    <span class="date">2017-05-06</span>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页面底部 -->
+    <div class="jumbotron  footer-bg">
+        <div class="container">
+            <div class="row content">
+                <div class="col-lg-4  col-md-4 col-sm-4 col-xs-6 content-left">
+                    <div class="telphone animated bounceInDown">
+                        <div class="icon">
+                            <img src="./images/phone.png" alt="">
+                        </div>
+                        <div class="callme">0756-32685433</div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4  col-sm-4 col-xs-8 content-center">
+                    <img src="./images/footer_logo.png" alt="">
+                </div>
+                <div class="col-lg-4  col-md-4 col-sm-4 col-xs-6 content-right">
+                    <div class="email animated bounceInUp">
+                        <div class="icon">
+                            <img src="./images/email.png" alt="">
+                        </div>
+                        <div class="qq">MrQin@qq.com</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="txt">
+            Copyright © 2017.Couple All rights reserved.
+        </div>
+    </div>
+</body>
+
+</html>

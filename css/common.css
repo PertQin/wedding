@@ -1,0 +1,339 @@
+/* 公共样式 */
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+/* 清除浮动 */
+.clear:after {
+  display: block;
+  clear: both;
+  content: ".";
+  visibility: hidden;
+  height: 0px;
+}
+/* 1px像素处理 */
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5) {
+  .navbar-nav li::after {
+    -webkit-transform: scaleY(0.7);
+    transform: scaleY(0.7);
+  }
+}
+@media only screen and (-Webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
+  .navbar-nav li::after {
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+  }
+}
+/* 导航条样式 */
+.navbar {
+  position: relative;
+  min-height: 50px;
+  border: none;
+  margin-bottom: 0;
+  height: 117px;
+  background: #24282e;
+  padding-top: 15px;
+}
+.container-fluid {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+}
+.navbar-brand {
+  padding: 0;
+}
+.navbar-header {
+  height: 100%;
+  margin: 0;
+}
+.navbar-header .navbar-brand {
+  height: 100%;
+}
+.navbar-header .navbar-brand img {
+  margin: 4px 0;
+  width: 137px;
+  height: 83px;
+}
+.navbar-nav {
+  background: #24282e;
+  margin: 0px -15px;
+}
+@media screen and (max-width: 1200px) {
+  .navbar > .container-fluid .navbar-brand {
+    margin-left: 0px;
+  }
+  .container-fluid > .navbar-header {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
+.navbar-toggle {
+  top: 50%;
+  transform: translate(0, -90%);
+  margin-right: 0;
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: Microsoft YaHei;
+  line-height: 45px;
+  transition: all 0.5s;
+}
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #fc3158;
+  line-height: 40px;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  color: #fc3158;
+  background-color: #24282e;
+}
+.collapse.in .navbar-nav li {
+  position: relative;
+  transition: all 1s;
+}
+.collapse.in .navbar-nav li:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #101010;
+}
+/* 页面底部 */
+.content-left {
+  height: 35px;
+  position: absolute;
+  top: 50%;
+}
+.content-left .telphone {
+  height: 100%;
+  float: left;
+}
+.content-left .telphone .icon {
+  display: inline-block;
+  width: 48px;
+  height: 100%;
+}
+.content-left .telphone .icon img {
+  width: auto;
+  height: 100%;
+  position: relative;
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.content-left .telphone .callme {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 16px;
+  color: #fff !important;
+  text-align: left;
+  font-weight: normal;
+  font-family: "Microsoft YaHei";
+  line-height: 40px;
+  letter-spacing: 3px;
+  padding-left: 10px;
+}
+.content-center {
+  position: absolute;
+  top: 50%;
+  left: calc(33.33333333%);
+  margin-top: -110px;
+  height: 242px;
+}
+.content-center img {
+  position: relative;
+  left: 50%;
+  margin-left: -50%;
+  width: 100%;
+  height: 100%;
+}
+.content-right {
+  position: absolute;
+  top: 50%;
+  left: calc(66.66666667%);
+}
+.content-right .email {
+  height: 100%;
+  float: right;
+}
+.content-right .email .icon {
+  display: inline-block;
+  width: 45px;
+  height: 35px;
+}
+.content-right .email .icon img {
+  width: 35px;
+  height: 100%;
+  position: relative;
+  top: 50%;
+  transform: translate(0, -60%);
+}
+.content-right .email .qq {
+  display: inline-block;
+  font-size: 18px;
+  font-family: "Microsoft YaHei";
+  color: #fff;
+  text-align: left;
+  font-weight: normal;
+  line-height: 40px;
+  letter-spacing: 3px;
+}
+.footer-bg {
+  width: 100%;
+  height: 467px;
+  padding: 0;
+  background: url('../images/bottom_bg.jpg');
+  background-size: cover;
+  margin-bottom: 0;
+  color: #fff !important;
+  overflow: hidden;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 10;
+  margin: 0 auto;
+  padding: 0;
+}
+.content {
+  width: 1200px;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 50%;
+  margin-left: -45%;
+  z-index: 2;
+}
+@media screen and (min-width: 1200px) and (max-width: 1300px) {
+  .content {
+    left: 0;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1200px) and (min-width: 641px) {
+  .content {
+    width: 98%;
+    margin-right: 0;
+    margin-left: -50%;
+  }
+  .content-left {
+    padding-left: 33px;
+  }
+  .content-right {
+    margin-left: -10px;
+  }
+}
+@media screen and (max-width: 840px) {
+  .content-left {
+    padding-right: 0;
+  }
+  .content-left .telphone .callme {
+    padding-left: 0;
+  }
+  .content-right {
+    padding-left: 0;
+  }
+  .content-right .email .qq {
+    margin-left: -10px;
+  }
+  .content-center {
+    padding: 0;
+  }
+}
+.copyright {
+  background: #fff;
+  width: 100%;
+  height: 60px;
+  margin: 0;
+}
+.copyright .txt {
+  text-align: center;
+  font-size: 18px;
+  line-height: 60px;
+  color: #333;
+  font-family: microsoft yahei;
+}
+@media screen and (max-width: 768px) {
+  .footer-bg {
+    background-position-x: 50%;
+    background-position-y: 0;
+    padding-top: 40px;
+    height: 400px;
+  }
+  .content {
+    width: 100%;
+    position: static;
+    margin: 0;
+  }
+  .content-left,
+  .content-right,
+  .content-center {
+    position: static;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .content-left {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .content-left .telphone .icon {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .content-left .telphone .icon img {
+    width: 25px;
+    height: 25px;
+    left: 35%;
+    top: 3px;
+  }
+  .content-left .telphone .callme {
+    font-size: 13px;
+    letter-spacing: normal;
+    margin-left: -8px;
+  }
+  .content-right {
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .content-right .email .icon {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .content-right .email .icon img {
+    width: 25px;
+    height: 25px;
+  }
+  .content-right .email .qq {
+    font-size: 13px;
+    letter-spacing: normal;
+  }
+  .content-center {
+    float: none;
+  }
+  .col-xs-6 {
+    float: none;
+  }
+  .copyright .txt {
+    font-size: 12px;
+  }
+  .navbar-header .navbar-brand img {
+    width: 100px;
+    height: auto;
+  }
+  .navbar {
+    height: 87px;
+    padding-top: 10px;
+  }
+}

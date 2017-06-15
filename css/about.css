@@ -1,0 +1,323 @@
+/* 关于我们 */
+html,
+body {
+  overflow-x: hidden;
+}
+#main {
+  width: 100%;
+}
+#main .bgBox {
+  padding: 0;
+  max-width: none;
+  margin: 0;
+  width: 100%;
+  height: 521px;
+  position: relative;
+}
+#main .bgBox .row {
+  margin: 0;
+}
+#main .bgBox .bg {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+#main .bgBox .bg img {
+  width: 100%;
+  height: auto;
+}
+#main .bgBox .bg-nav {
+  width: 332px;
+  height: 200px;
+  background: rgba(252, 49, 88, 0.4);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+#main .bgBox .bg-nav .title {
+  margin-top: 50px;
+  line-height: 48px;
+  font-size: 36px;
+  letter-spacing: 3px;
+}
+#main .bgBox .bg-nav .path {
+  line-height: 84px;
+  font-size: 0;
+}
+#main .bgBox .bg-nav .path div {
+  margin-left: 15px;
+}
+#main .bgBox .bg-nav .path span {
+  display: inline-block;
+  font-size: 18px;
+  margin-right: 15px;
+}
+#main .gsjj {
+  height: 131px;
+  color: #382d44;
+  font-size: 28px;
+  letter-spacing: 6px;
+}
+#main .gsjj p {
+  line-height: 50px;
+}
+#main .gsjjContent {
+  height: 625px;
+  width: 100%;
+}
+#main .gsjjContent .row {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+}
+#main .gsjjContent .row .txt {
+  width: 50%;
+  text-indent: 2em;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: left;
+  font-family: SimHei;
+  color: #111111;
+  float: left;
+  position: relative;
+  top: -1%;
+}
+#main .gsjjContent .row .txt p {
+  margin-bottom: 20px;
+}
+#main .gsjjContent .row .pic {
+  width: 46%;
+  float: right;
+}
+#main .gsjjContent .row .pic img {
+  width: 100%;
+  height: auto;
+}
+#main .ourTeam {
+  height: 924px;
+  background: url('../images/homepage_bg.jpg') no-repeat;
+  background-size: cover;
+  background-position-x: 50%;
+  background-position-y: 0%;
+}
+#main .ourTeam .team {
+  margin-top: 6%;
+  letter-spacing: 6px;
+}
+#main .ourTeam .team p {
+  color: #382d44;
+  font-size: 28px;
+  font-weight: normal;
+  margin: 0;
+}
+#main .ourTeam .pic {
+  margin-top: 1%;
+}
+#main .ourTeam .introduction {
+  margin-top: 2%;
+}
+#main .ourTeam .introduction p {
+  color: #646464;
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+#main .ourTeam .row {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  top: 4%;
+}
+#main .ourTeam .row .designer .thumbnail {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+}
+#main .ourTeam .row .designer .thumbnail .img-bg {
+  background: #fff url('../images/ourTeam_bg.png') no-repeat;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-size: cover;
+  width: 100%;
+  height: 471px;
+  position: relative;
+}
+#main .ourTeam .row .designer .thumbnail .img-bg .img-container {
+  width: 100%;
+  height: 409px;
+  position: absolute;
+  top: 31px;
+  left: 0;
+}
+#main .ourTeam .row .designer .thumbnail .img-bg .img-container img {
+  width: auto;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+#main .ourTeam .row .designer .thumbnail .caption {
+  padding: 0;
+}
+#main .ourTeam .row .designer .thumbnail .caption .name {
+  font-size: 20px;
+  line-height: 30px;
+  font-family: Microsoft YaHei;
+  letter-spacing: 2px;
+  color: #ee0548;
+  font-weight: bold;
+  position: relative;
+}
+#main .ourTeam .row .designer .thumbnail .caption .name:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: -60%;
+  width: 16%;
+  height: 3px;
+  background: #ee0548;
+}
+#main .ourTeam .row .designer .thumbnail .caption .designSay {
+  display: block;
+  margin-top: 10%;
+  font-size: 14px;
+  line-height: 25px;
+  font-family: Microsoft YaHei;
+  letter-spacing: 2px;
+  color: #646464;
+  font-weight: normal;
+}
+@media screen and (max-width: 1200px) {
+  #main .gsjjContent .row {
+    width: 96%;
+  }
+  #main .gsjjContent .row .txt {
+    font-size: 12px;
+    line-height: 28px;
+    padding: 0;
+    top: -2%;
+  }
+  #main .gsjjContent .row .txt p {
+    margin-bottom: 0px;
+  }
+}
+@media screen and (max-width: 780px) {
+  #main .gsjj {
+    font-size: 22px;
+    letter-spacing: normal;
+  }
+  #main .gsjjContent .row {
+    width: 96%;
+    overflow: hidden;
+  }
+  #main .gsjjContent .row .txt {
+    width: 100%;
+    font-size: 14px;
+    top: 0%;
+  }
+  #main .gsjjContent .row .txt p {
+    margin-bottom: 30px;
+  }
+  #main .gsjjContent .row .pic {
+    float: none;
+    position: relative;
+    top: -105%;
+    width: 100%;
+    opacity: 0.3;
+  }
+}
+@media screen and (max-width: 780px) and (min-width: 558px) {
+  #main .gsjjContent .row .txt {
+    top: 14%;
+  }
+  #main .gsjjContent .row .pic {
+    display: none;
+  }
+}
+@media screen and (max-width: 1200px) and (min-width: 641px) {
+  #main {
+    width: 100%;
+  }
+  #main .bgBox {
+    width: 1200px;
+    position: relative;
+    height: 440px;
+    top: 0;
+    left: 50%;
+    margin-left: -600px;
+    margin-bottom: 20px;
+  }
+  #main .bgBox .bg-nav {
+    width: 30%;
+    height: 161px;
+  }
+  #main .bgBox .bg-nav .path {
+    line-height: 50px;
+  }
+  #main .gsjjContent {
+    height: auto;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #main .ourTeam {
+    height: auto;
+  }
+  #main .ourTeam .row .designer .thumbnail .img-bg {
+    height: 374px;
+  }
+  #main .ourTeam .row .designer .thumbnail .img-bg .img-container {
+    left: 0%;
+    width: 100%;
+    top: 26px;
+    height: 321px;
+  }
+}
+@media screen and (max-width: 750px) {
+  #main .ourTeam .pic,
+  #main .ourTeam .introduction {
+    margin-top: 5%;
+  }
+  #main .ourTeam .team p {
+    margin-top: 40px;
+    font-size: 20px;
+    letter-spacing: normal;
+  }
+}
+@media screen and (max-width: 640px) {
+  #main .bgBox {
+    width: 100%;
+    height: 282px;
+    left: 0;
+    top: 0;
+    margin-bottom: 20px;
+  }
+  #main .bgBox .bg {
+    height: 282px;
+  }
+  #main .bgBox .bg img {
+    width: auto;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  #main .bgBox .bg-nav {
+    width: 60%;
+    height: 124px;
+  }
+  #main .bgBox .bg-nav .title {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  #main .bgBox .bg-nav .path {
+    line-height: 30px;
+  }
+}
